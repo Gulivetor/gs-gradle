@@ -1,6 +1,6 @@
 node {
   //def myGradleContainer = docker.image('gradle:jdk8')
-  def myGradleContainer = docker.image('gradle:jdk11')
+  def myGradleContainer = docker.image('gradle:6.9.0-jdk8')
   myGradleContainer.pull()
   stage('prep') {
     checkout scm
