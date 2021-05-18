@@ -7,7 +7,7 @@ node {
   }
   stage('test') {
      myGradleContainer.inside("-v /usr/src/jenkins-data/.gradle:/home/gradle/.gradle") {
-       sh 'cd complete && gradle test --stacktrace'
+       sh 'cd complete && gradle test'
      }
   }
   stage('run') {
